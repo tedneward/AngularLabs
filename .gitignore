@@ -57,3 +57,17 @@ typings/
 # dotenv environment variables file
 .env
 
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+
+# Jet-Brains (Webstorm, etc)
+.idea/*
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
