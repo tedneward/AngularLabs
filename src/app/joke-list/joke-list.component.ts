@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {JokeService} from '../joke.service';
 import {Joke} from '../joke';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-joke-list',
@@ -10,11 +11,16 @@ import {Joke} from '../joke';
 export class JokeListComponent implements OnInit {
     jokes: Joke[];
 
-    constructor() {
+    constructor(private jokeService: JokeService, private router: Router) {
     }
 
     ngOnInit() {
-        this.jokes = (new JokeService()).getJokes();
+        this.jokes = this.jokeService.getJokes();
     }
+
+    showJoke(joke: Joke) {
+        this.router.navigate(['/jokes/' + joke.id]);
+    }
+
 
 }
