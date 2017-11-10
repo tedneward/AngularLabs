@@ -1,7 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
 import {JokeListComponent} from './joke-list/joke-list.component';
@@ -9,6 +8,7 @@ import {JokeDetailComponent} from './joke-detail/joke-detail.component';
 import {JokeService} from './joke.service';
 import {RouterModule, Routes} from '@angular/router';
 import { VoteComponent } from './vote/vote.component';
+import {HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
     { path: 'jokes', component: JokeListComponent },
@@ -26,11 +26,10 @@ const appRoutes: Routes = [
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule,
+        HttpClientModule,
         RouterModule.forRoot(appRoutes)
     ],
     providers: [JokeService],
     bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule { }
