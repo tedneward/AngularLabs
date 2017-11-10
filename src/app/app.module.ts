@@ -8,6 +8,7 @@ import {JokeListComponent} from './joke-list/joke-list.component';
 import {JokeDetailComponent} from './joke-detail/joke-detail.component';
 import {JokeService} from './joke.service';
 import {RouterModule, Routes} from '@angular/router';
+import { VoteComponent } from './vote/vote.component';
 
 const appRoutes: Routes = [
     { path: 'jokes', component: JokeListComponent },
@@ -19,7 +20,8 @@ const appRoutes: Routes = [
     declarations: [
         AppComponent,
         JokeListComponent,
-        JokeDetailComponent
+        JokeDetailComponent,
+        VoteComponent
     ],
     imports: [
         BrowserModule,

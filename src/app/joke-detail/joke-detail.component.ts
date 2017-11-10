@@ -20,4 +20,11 @@ export class JokeDetailComponent implements OnInit {
         this.joke = this.jokeService.getJoke(jokeId);
     }
 
+    public upVote() {
+        this.joke.upVote();
+    }
+
+    public downVote(){
+        this.joke.downVote();
+    }
 }
