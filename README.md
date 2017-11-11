@@ -51,7 +51,7 @@ From a command-line prompt, before any work is done, type `ng test`; this will o
 
 * *Generate the Joke class.* Let Angular-CLI do the work: `ng generate class Joke --spec true`. This will be the `src/app/joke.ts` and `src/app/joke.spec.ts` files. A Joke consists of an "id" (a number), a "setup" (a string), and a "punchline" (string).
 
-* *Modify the Joke tests.* This time, TDD-style, modify the Joke tests first. (This will cause the tests to fail, which is expected; we fix that in the next step.) Modify the first test (the one already generated) to have the constructor take three parameters: one for the joke's primary-key id, one for the joke setup, and one for the joke punchline. Then write a test that ensures that the Joke object makes these fields accessible from properties (named `setup`, `punchline`, `id`). (Normally these should be separate tests, but we'll shorten it up.)
+* *Modify the Joke tests.* This time, TDD-style, modify the Joke tests first. (This will cause the tests to fail, which is expected; we fix that in the next step.) Modify the first test (the one already generated) to have the constructor take three parameters: one for the joke's primary-key id, one for the joke setup, and one for the joke punchline. Then write tests that ensure that the Joke object makes these fields accessible from properties (named `setup`, `punchline`, `id`).
 
 * *Modify the Joke class to pass the tests.* This will require adding the three parameters to the constructor and the three properties. When the tests pass, we can consider Joke to be tested and ready to go. Although, as we go on with the lab, you should think about what additional tests we could (and should) add.
 
