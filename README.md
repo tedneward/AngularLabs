@@ -45,8 +45,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 At this point, the domain models are finished. If you are not sure if you got it all to work, you can always fast-forward to the next lab by doing a `git checkout final`. It has our finalized solution; yours of course may be different.
 
-## Future directions
-There's a number of things you could do from here if you wanted to explore Angular in more depth:
-
-* *Make JokeService use HTTP to get/set data from a web API.* Of course, you'll have to create the HTTP API, which is a whole different set of labs.
-
