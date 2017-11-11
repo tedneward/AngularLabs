@@ -26,3 +26,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+## Future directions
+There's a number of things you could do from here if you wanted to explore Angular in more depth:
+
+* *Make JokeService use HTTP to get/set data from a web API.* Of course, you'll have to create the HTTP API, which is a whole different set of labs.
+
