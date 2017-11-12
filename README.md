@@ -12,7 +12,9 @@ In this lab, we will build a component that lists the Jokes returned by the Joke
 
 * *Create the HTML template.* In order to loop through the array of Jokes, we need to use the `*ngFor` directive in the template. Use `*ngFor` on a `div` tag to loop through the jokes (using `let joke of jokes`). Inside the `div` tag, use template expression syntax (the double-curly-brackets syntax) to display each joke's setup and punchline. (Put the punchline in bold, just for that extra effect.)
 
-At this point, the domain models are finished. If you are not sure if you got it all to work, you can always fast-forward to the next lab by doing a `git checkout lab-3`.
+* *Reference the JokeListComponent from the AppComponent.* When the Angular CLI scaffolded out the application, it put some boilerplate HTML into the AppComponent, which is the "main page" of the application. Replace the entire AppComponent HTML template with an `h1` that displays the title, and then use the JokeListComponent selector (which would be `app-joke-list`, if you didn't change it) to display the list of jokes. Make sure to have both opening and closing tags. 
+
+At this point, the JokeListComponent and related changes are finished. If you are not sure if you got it all to work, you can always fast-forward to the next lab by doing a `git checkout lab-3`.
 
 ## Reference links
 
