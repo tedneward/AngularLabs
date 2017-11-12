@@ -1,4 +1,5 @@
 # AngularLabs
+Congratulations! You have completed our Angular hands-on labs.
 
 ## Future directions
 There's a number of things you could do from here if you wanted to explore Angular in more depth:
@@ -6,6 +7,8 @@ There's a number of things you could do from here if you wanted to explore Angul
 * *Testing, testing, testing.* Yeah, we really should've been doing this all along. Go back to each of the .spec.ts files, and add some tests to make sure that your various refactorings that you want to do don't break anything. The tests could also use with a little refactoring themselves (the Joke tests, for example, create a new Joke each time, and that could be captured in a beforeEach, for example). 
 
 * *Add Bootstrap.* Let's be honest, you didn't come to this workshop to see a beautiful paragon of user interface design; if you did, you were probably deeply disappointed. Throw some Bootstrap in there and make it look all pretty. (This will involve adding the Bootstrap CSS to the index.html, and making use of it in the HTML templates; if you customize Bootstrap in some way, you can do that in the Bootstrap CSS files, or by leveraging the component's CSS files.)
+
+* *Add to the database.* One major feature missing is the ability to add or edit (or delete!) Jokes into the system. This will require knowing Angular Forms and input validation, which is part of the `@angular/forms` module.
 
 * *Use a middle-tier service.* Write some Express code that will be the HTTP API used to hold the data. (This is better than trying to access an HTTP database directly for a variety of reasons, although for some scenarios tha's a reasonable approach as well, particularly with a database like CouchDB.) Modify the JokeService to use Angular's HTTP facilities to access your Express middle-tier.
 
