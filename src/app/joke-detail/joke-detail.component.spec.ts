@@ -1,6 +1,9 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed, inject } from '@angular/core/testing';
 
 import { JokeDetailComponent } from './joke-detail.component';
+import {JokeService} from '../joke.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('JokeDetailComponent', () => {
   let component: JokeDetailComponent;
@@ -8,7 +11,12 @@ describe('JokeDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ JokeDetailComponent ]
+      imports: [RouterTestingModule.withRoutes([{path: '', component: JokeDetailComponent}])],
+      declarations: [ JokeDetailComponent ],
+      providers: [JokeService, {
+        provide: ActivatedRoute,
+        useValue: {snapshot: {params: {'jokeId': '1'}}}
+      }]
     })
     .compileComponents();
   }));
@@ -19,7 +27,8 @@ describe('JokeDetailComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should be created', inject([JokeService, ActivatedRoute],
+    (service: JokeService, activatedRoute: ActivatedRoute) => {
     expect(component).toBeTruthy();
-  });
+  }));
 });
