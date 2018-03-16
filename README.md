@@ -1,6 +1,6 @@
 # AngularLabs
 
-This README file contains the default Angular CLI-generated content, plus the lab instructions for each step. Each lab step is tagged with a branch, so to start on the first lab, simply "git checkout lab-1", examine the README file for the instructions, and begin.
+This README file contains the default Angular CLI-generated content, plus the lab instructions for each step. Each lab step is tagged with a branch, so to start on the first lab, simply `git checkout lab-1`, examine the README file for the instructions, and begin.
 
 ## Lab 1: Domain Models
 
@@ -24,7 +24,7 @@ This gives us a domain model class, but we still need a way to do CRUD for it--w
 
 * *Generate the JokeService class.* We will eventually want this to be an Angular service, so let's go ahead and use the CLI to create the service; for now, we'll use it as a straightforward class, but begin by generating the service using `ng generate service Joke --spec true`. This will create the `src/app/joke.service.ts` file and its associated specification (test) file, `src/app/joke.service.spec.ts`.
 
-* *Write some JokeService tests.* Notice that the JokeService tests use a slightly different idiom than the Joke tests; use that same idiom to test two methods on JokeService, `getJokeList`, which should return an Array<Joke>, and `getJoke`, which will take a number as a parameter (the ID of the Joke to return). The first test should test that `getJokeList` returns more than zero objects, and the second should test that when passed the id "1", it returns the first Joke in the list.
+* *Write some JokeService tests.* Notice that the JokeService tests use a slightly different idiom than the Joke tests; use that same idiom to test two methods on JokeService, `getJokes`, which should return an Array<Joke>, and `getJoke`, which will take a number as a parameter (the ID of the Joke to return). The first test should test that `getJokes` returns more than zero objects, and the second should test that when passed the id "1", it returns the first Joke in the list.
 
 * *Modify the JokeService class to pass the tests.* Inside the JokeService, create a static array of Jokes (we called it "database"), initialized to a half-dozen or so Joke instances. The `getJoke` method, taking a number parameter, should return the n-th item in the `database` array, and `getJokes` should return the entire array.
 
