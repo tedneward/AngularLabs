@@ -1,6 +1,6 @@
 # AngularLabs
 
-This README file contains the default Angular CLI-generated content, plus the lab instructions for each step. Each lab step is tagged with a branch, so to start on the first lab, simply "git checkout master", examine the README file for the instructions, and begin.
+This README file contains the default Angular CLI-generated content, plus the lab instructions for each step. Each lab step is tagged with a branch, so to start on the first lab, simply `git checkout master`, examine the README file for the instructions, and begin.
 
 # Lab 4: Jokes, Votes, LOLs, Oh My!
 
