@@ -21,6 +21,8 @@ Two additional steps that can either be done ahead of time or during the labs in
 
 * Angular-CLI: This is a command-line tool for Angular projects, and we will be using it extensively. Install it by running `npm install -g @angular-cli`. (The "@" is not a typo.) Verify it is installed by running `ng version`.
 
+Lastly, once all the dependencies are installed, make sure to do a `git clone` of this project.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
 ## Development server
