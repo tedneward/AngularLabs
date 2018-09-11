@@ -19,7 +19,7 @@ Two additional steps that can either be done ahead of time or during the labs in
 
 * TypeScript: Once NodeJS is installed, you can install TypeScript to your machine by running `npm install -g typescript`. This will create a global command, `tsc`, the TypeScript compiler. Run `tsc --version` in a new command-line window to verify it was installed. (You may need to do it in a new command-line window because of how `npm` works on Windows.)
 
-* Angular-CLI: This is a command-line tool for Angular projects, and we will be using it extensively. Install it by running `npm install -g @angular-cli`. (The "@" is not a typo.) Verify it is installed by running `ng version`.
+* Angular-CLI: This is a command-line tool for Angular projects, and we will be using it extensively. Install it by running `npm install -g @angular/cli`. (The "@" is not a typo.) Verify it is installed by running `ng version`.
 
 Lastly, once all the dependencies are installed, make sure to do a `git clone` of this project.
 
