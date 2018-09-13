@@ -21,7 +21,17 @@ Two additional steps that can either be done ahead of time or during the labs in
 
 * Angular-CLI: This is a command-line tool for Angular projects, and we will be using it extensively. Install it by running `npm install -g @angular/cli`. (The "@" is not a typo.) Verify it is installed by running `ng version`.
 
-Lastly, once all the dependencies are installed, make sure to do a `git clone` of this project.
+This will get all of the necessary tools set up on your machine. Now, how do you want to work?
+
+## Make your choice
+
+There are two ways to do these labs:
+
+* *Clone this project* Working on our version of the project files has the advantage of keeping everything localized inside of one directory, but does run the risk that you may have to "git stash" your changes when you move back and forth between branches. Whether you want to work in this directory, or just run the code in this project, make sure to run `npm install` in this directory before `ng serve` or `ng test`, or you may get strange errors. (`npm` is the Node Package Manager, and it is used to pull down all the dependencies--including Angular itself--into the current directory so that the project can run.)
+
+* *Create a new project* If you choose to create a new project, do a `ng new JokeApp` in an empty directory. (You will not need to do an `npm install`, as that is done as part of generating a new project.) *WARNING:* If you copy files out of the AngularLabs project, you will need to make sure everything is registered in the AppModule class by hand; normally this is done for you when we run the `ng generate` commands.
+
+## Ready?
 
 At this point, you are ready to begin the labs. If you are not sure if you got it all to work, you can always fast-forward to the next lab by doing a `git checkout lab-1`.
 
